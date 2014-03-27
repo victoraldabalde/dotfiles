@@ -1,0 +1,33 @@
+[user]
+	name = Victor Aldabalde
+	email = victoraldabalde@gmail.com
+[color]
+	ui = always
+[color "branch"]
+	current = yellow bold
+	local = green bold
+	remote = cyan bold
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[color "status"]
+	added = green bold
+	changed = yellow bold
+	untracked = red bold
+[push]
+	default = simple
+[core]
+	autocrlf = input
+[alias]
+	st = status
+	a = add -A
+	cm = commit -m
+	st = status
+	pu = pull
+	ck = checkout
+	ps = push
+	this = !git init && git add . && git commit -m \"initial commit\"
+	ignore =!([ ! -e .gitignore ] && touch .gitignore) | echo $1 >>.gitignore
